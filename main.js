@@ -223,16 +223,36 @@ const converter = csv()
 });
 
 //read contacts.csv
+
+let listID = [];
+let newListID = [];
+
 const convert = csv()
 .fromFile('./contacts.csv')
 .then((json) => {
     json.forEach((row) => {
+
+        if(row.listing_id){
+            listID.push(row.listing_id)
+        }
       //convert csv to json
         if (row){
             contact.push(row)
         }
        // console.log(row);
     });
+    
+    //try in the Average price of the 30% most contacted listings
+    // var counter1 = {};
+    // listID.forEach(function(i) { counter1[i] = (counter1[i]||0) + 1;});
+    // console.log(counter1);
+
+    // for(let i = 0; i < listID.length ; i++){  
+    //     if(newListID.indexOf(listID[i]) === -1){
+    //         newListID.push(listID[i]);
+    //     }; 
+    // }
+    // console.log(newListID);
 
 //conver contacts.csv to json
 // for(let i = 0; i < contact.length ; i++){
