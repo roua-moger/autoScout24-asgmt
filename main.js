@@ -1,4 +1,6 @@
-
+//convert csv to json
+let list = [{}];
+let contact = [{}];
 //var for 3 seller type
 let private = [];
 let dealer = [];
@@ -39,7 +41,12 @@ const converter = csv()
 .fromFile('./listings.csv')
 .then((json) => {
     json.forEach((row) => {
- 
+
+        //convert csv to json
+        if (row){
+            list.push(row)
+        }
+
     //start the code for Average Listing Selling Price per Seller Type 
     if(row.seller_type === 'private'){
         private.push(row.price)
@@ -54,6 +61,7 @@ const converter = csv()
     if(row.make){
         makeList.push(row.make)
     }
+    
 
     if(row.make === 'Audi'){
         audi.push(row.make)
@@ -73,9 +81,14 @@ const converter = csv()
         mercedesBenz.push(row.make)
     }
 
+});
 
-    });
-
+    //conver listings.csv to json
+    // for(let i = 0; i < list.length ; i++){
+    //     let dataList = JSON.stringify(list, null, 2);
+    //    fs.writeFileSync('listings.json', dataList);
+    //        }
+     
     //counting the var
     for(let i = 0; i < private.length ; i++){
         sumP += parseInt(private[i]);
@@ -214,7 +227,16 @@ const convert = csv()
 .fromFile('./contacts.csv')
 .then((json) => {
     json.forEach((row) => {
-     
+      //convert csv to json
+        if (row){
+            contact.push(row)
+        }
        // console.log(row);
     });
+
+//conver contacts.csv to json
+// for(let i = 0; i < contact.length ; i++){
+//     let dataContact = JSON.stringify(contact, null, 2);
+//    fs.writeFileSync('contacts.json', dataContact);
+//        }
 })
