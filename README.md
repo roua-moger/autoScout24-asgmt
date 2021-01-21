@@ -27,11 +27,11 @@ npm install json-server (if you want to check the local API and run it after tha
 <h2>Websites</h2>
 
 The online websites you maybe need to have a look to it:
-My online project : https://rouaadps.github.io/autoScout24-asgmt/
-Heroku API main site : https://autoscout24-api.herokuapp.com/
-Heroku Average : https://autoscout24-api.herokuapp.com/avgTable
-Heroku Percentual : https://autoscout24-api.herokuapp.com/percTable
-Heroku Listings : https://autoscout24-api.herokuapp.com/listings
+My online project : https://rouaadps.github.io/autoScout24-asgmt/<br>
+Heroku API main site : https://autoscout24-api.herokuapp.com/<br>
+Heroku Average : https://autoscout24-api.herokuapp.com/avgTable<br>
+Heroku Percentual : https://autoscout24-api.herokuapp.com/percTable<br>
+Heroku Listings : https://autoscout24-api.herokuapp.com/listings<br>
 Heroku Contacts  ** it is  a very big Data it will take time to uploud: https://autoscout24-api.herokuapp.com/contacts 
 
 
