@@ -15,14 +15,17 @@ Updating my Heroku
 Convert the CSV files into JSON files <br>
 Create my index.html and build the tables layout<br>
 Create my tables in script.js with fetching the data from the online API and build my table in JS code<br>
-<hr />
+Using Bootstrap for the CSS with some changing with style.css<br>
+
 
 <h2>Run the Code</h2>
 
-if you want to run the code you will maybe need to install<br> 
+If you want to run the code you will maybe need to install<br> 
 npm install csvtojson<br>
 npm install json-server (if you want to check the local API and run it after that with "json-server --watch file.json")<br>
-<hr />
+We can run the code using node file.js (main.js) in the command line to run the code in it<br>
+or run the server using npm start in the command lineto run the cose in server.js
+
 
 <h2>Websites</h2>
 
