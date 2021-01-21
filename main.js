@@ -10,6 +10,17 @@ let sumO = 0;
 //var to test wich cars are in make
 let makeList = [];
 let newMakeList = [];
+//var for the make car
+let audi = [];
+let mazda = [];
+let bwm = [];
+let toyota = [];
+let renanlt = [];
+let vw = [];
+let fiat = [];
+let mercedesBenz = [];
+//var for make car counting 
+
 
 const csv = require('csvtojson');
 const fs = require('fs');
@@ -22,7 +33,7 @@ const converter = csv()
 .then((json) => {
     json.forEach((row) => {
  
-    //Average Listing Selling Price per Seller Type
+    //start the code for Average Listing Selling Price per Seller Type 
     if(row.seller_type === 'private'){
         private.push(row.price)
     }else if(row.seller_type === 'dealer'){
@@ -31,10 +42,30 @@ const converter = csv()
         other.push(row.price)
     }
 
+    // start the code for Percentual Distribution of available cars by Make
     //test wich cars are in make
     if(row.make){
         makeList.push(row.make)
     }
+
+    if(row.make === 'Audi'){
+        audi.push(row.make)
+    }else if(row.make === 'Mazda'){
+        mazda.push(row.make)
+    }else if(row.make === 'BWM'){
+        bwm.push(row.make)
+    }else if(row.make === 'Toyota'){
+        toyota.push(row.make)
+    }else if(row.make === 'Renault'){
+        renanlt.push(row.make)
+    }else if(row.make === 'VW'){
+        vw.push(row.make)
+    }else if(row.make === 'Fiat'){
+        fiat.push(row.make)
+    }else if(row.make === 'Mercedes-Benz'){
+        mercedesBenz.push(row.make)
+    }
+
 
     });
 
