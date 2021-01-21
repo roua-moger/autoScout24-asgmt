@@ -4,7 +4,8 @@
   "description": "AutoScout 24 asgmt for Junior Fullstack",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
