@@ -1,5 +1,5 @@
 
-//variable for 3 seller type
+//var for 3 seller type
 let private = [];
 let dealer = [];
 let other = [];
@@ -7,6 +7,9 @@ let other = [];
 let sumP = 0;
 let sumD = 0;
 let sumO = 0;
+//var to test wich cars are in make
+let makeList = [];
+let newMakeList = [];
 
 const csv = require('csvtojson');
 const fs = require('fs');
@@ -26,6 +29,11 @@ const converter = csv()
         dealer.push(row.price)
     }else if(row.seller_type === 'other'){
         other.push(row.price)
+    }
+
+    //test wich cars are in make
+    if(row.make){
+        makeList.push(row.make)
     }
 
     });
@@ -70,11 +78,24 @@ const converter = csv()
 
    
 };
-
+    //convert to json file
     let data = JSON.stringify(avgTable, null, 2);
     fs.writeFileSync('avgTable.json', data);
 
     console.log(avgTable);
+
+    //test wich cars are in make and howmany
+    var counter = {};
+    makeList.forEach(function(r) { counter[r] = (counter[r]||0) + 1;});
+    console.log(counter);
+
+     for(let m = 0; m < makeList.length ; m++){  
+        if(newMakeList.indexOf(makeList[m]) === -1){
+            newMakeList.push(makeList[m]);
+        }; 
+    }
+     console.log(newMakeList);
+
 })
 
 //read contacts.csv
