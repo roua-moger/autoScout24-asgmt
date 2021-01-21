@@ -1,0 +1,19 @@
+{
+  "name": "autoscout24-asgmt",
+  "version": "1.0.0",
+  "description": "AutoScout 24 asgmt for Junior Fullstack",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rouaaDPS/autoScout24-asgmt.git"
+  },
+  "author": "Rowaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rouaaDPS/autoScout24-asgmt/issues"
+  },
+  "homepage": "https://github.com/rouaaDPS/autoScout24-asgmt#readme"
+}
