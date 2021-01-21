@@ -18,7 +18,7 @@ Create my tables in script.js with fetching the data from the online API and bui
 <hr />
 
 <h2>Run the Code</h2>
-<hr />
+
 if you want to run the code you will maybe need to install<br> 
 npm install csvtojson<br>
 npm install json-server (if you want to check the local API and run it after that with "json-server --watch file.json")<br>
