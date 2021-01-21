@@ -14,11 +14,34 @@ fetch("https://autoscout24-api.herokuapp.com/avgTable")
     }
 });
 
-function createAvgTable(data) {
+function createAvgTable(data){
     let row = document.createElement("tr");
     row.innerHTML = `
     <td>${data.seller_type}</td>
     <td>${data.average}</td>
     `
     return row;
+}
+
+//create percTable in JS
+let percTable = document.getElementById("percTable");
+fetch("https://autoscout24-api.herokuapp.com/percTable")
+.then(response => response.json())
+.then(data => {
+    //console.log(data.percList);
+    let perc = data.percList;
+    for(let i = 0; i < perc.length; i++){
+        let percRow = createPercTable(perc[i]);
+        percTable.appendChild(percRow);
+    }
+});
+
+function createPercTable(data){
+    let row = document.createElement("tr");
+    row.innerHTML = `
+    <td>${data.make}</td>
+    <td>${data.pecentual}</td>
+    `
+    return row;
+
 }
