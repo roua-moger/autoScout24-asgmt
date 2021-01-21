@@ -1,0 +1,36 @@
+{
+  "percList": [
+    {
+      "make": "Audi",
+      "pecentual": "14 %"
+    },
+    {
+      "make": "Mazda",
+      "pecentual": "13 %"
+    },
+    {
+      "make": "BWM",
+      "pecentual": "7 %"
+    },
+    {
+      "make": "Toyota",
+      "pecentual": "16 %"
+    },
+    {
+      "make": "Renault",
+      "pecentual": "14 %"
+    },
+    {
+      "make": "VW",
+      "pecentual": "10 %"
+    },
+    {
+      "make": "Fiat",
+      "pecentual": "9 %"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "pecentual": "16 %"
+    }
+  ]
+}
