@@ -1,4 +1,4 @@
-# autoScout24-asgmt
+# AutoScout24 Assignment
 Start to build the project with the new Repository in GitHub and clone it in my project<br>
 Adding the two CSV files "listings, contacts"<br>
 Install npm init, npm i to creat the two json packages<br>
@@ -26,7 +26,7 @@ npm install json-server (if you want to check the local API and run it after tha
 
 <h2>Websites</h2>
 
-The online websites you maybe need to have a look to it:
+The online websites you maybe need to have a look to it:<br>
 My online project : https://rouaadps.github.io/autoScout24-asgmt/<br>
 Heroku API main site : https://autoscout24-api.herokuapp.com/<br>
 Heroku Average : https://autoscout24-api.herokuapp.com/avgTable<br>
