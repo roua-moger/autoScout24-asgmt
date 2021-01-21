@@ -1,0 +1,16 @@
+{
+  "avgList": [
+    {
+      "seller_type": "private",
+      "average": "€ 26.080"
+    },
+    {
+      "seller_type": "dealer",
+      "average": "€ 25.037"
+    },
+    {
+      "seller_type": "other",
+      "average": "€ 25.318"
+    }
+  ]
+}
